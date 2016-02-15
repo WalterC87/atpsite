@@ -1,6 +1,288 @@
+@font-face {
+  font-family: 'Imperial';
+  src: url('fonts/imperial/imperialstd-bold.eot');
+  src: url('fonts/imperial/imperialstd-bold.eot') format('embedded-opentype'), 
+  	   url('fonts/imperial/imperialstd-bold.woff') format('woff2'), 
+  	   url('fonts/imperial/imperialstd-bold.woff') format('woff'), 
+  	   url('fonts/imperial/imperialstd-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	font-size: 14px;
 	background-color: #fff;
+	color: #333333;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+p{
+	font-size: 18px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.full-width{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.header-container{
+	text-align: center;
+}
+
+.top-nav{
+	background-color: #eaedf0;
+	color: #a3454a;
+	font-size: 12px;
+}
+
+.top-nav-items{
+	text-align: right;
+	margin-right: 7.5%;
+	padding: 5px 0;
+}
+
+.top-nav-items li{
+	display: inline-block;
+	padding: 0 5px;
+	font-size: 15px;
+}
+
+.top-nav-separator:before{
+	content: " ";
+	height: 100%;
+	border-left: 1px solid #aeaeaf;
+}
+
+.header-slogan{
+	background-color: #3b435e;
+	font-family: 'Imperial', sans-serif;
+	color: #fff
+}
+
+.header-slogan figure img{
+	width: 100%;
+}
+
+.header-slogan figure,
+.header-slogan h5{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-slogan h5{
+	font-size: 40px;
+	margin: 0;
+	padding: 0
+}
+
+nav.nav-principal{
+	background-color: #292e40;
+	color: #fff;
+}
+
+nav.nav-principal ul{
+	padding: 10px 0;
+}
+
+nav.nav-principal ul li{
+	display: inline-block;
+	margin-left: 45px;
+	font-size: 20px;
+}
+
+nav.nav-principal ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	color: #fff;
+	-webkit-transition: color 0.5s ease ;
+}
+
+nav.nav-principal ul li a:hover{
+	color: #de767d;
+}
+
+.principal-wrap{
+	min-height: calc(100vh-493px);
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.features{
+	padding: 30px 0 50px 0;
+}
+
+.feature{
+	min-height: calc(330px - 39px);
+}
+
+.title-our,
+.title-feature{
+	color: #97312f;
+}
+
+.title-our{
+	font-size: 20px;
+	margin: 0px;
+}
+
+.title-feature{
+	font-family: "Imperial", sans-serif;
+	font-size: 40px;
+	margin: 0;
+}
+
+.titulo-feature,
+.icono-feature{
+	display: inline-block;
+	vertical-align:  middle;
+}
+
+.titulo-feature{
+	width: 50%;
+	text-align: left;
+}
+
+.icono-feature{
+	width: 40%;
+	text-align: center;
+}
+
+.icono-feature i{
+	
+	color: #859394;
+	font-size: 70px;
+}
+
+.footer-feature{
+	height: calc(39px);
+}
+
+.text-atp{
+	margin-top: 10px;
+	padding: 5px;
+}
+
+/*porque ATP*/
+
+.content-why{
+	width: 90%;
+	margin-left: 20px;
+}
+
+.img-slider-why,
+.text-why{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+}
+
+.text-why{
+	background-color: #f0f4f7;
+	min-height: 350px;
+	padding-bottom: 15px;
+}
+
+.big-text-sans{
+	color: #97312f;
+	font-size: 45px;	
+	margin: 0;
+	padding: 0;
+}
+
+/*FOOTER*/
+
+.headline {
+    display: block;
+    margin: 10px 0 15px 0;
+    border-bottom: 1px dotted #c35860;
+}
+
+.headline h2, .headline h3, .headline h4 {
+    margin: 0 0 -2px 0;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #97312f;
+}
+
+.design-by{
+	text-align: right;
+}
+
+.design-by a{
+	font-size: 11px
+}
+
+/*BOTONES ATP*/
+.btn-atp {
+  display: block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+
+.btn-atp-primary{
+	color: #fff;
+	background-color: #97312f;
+	border-color: #97312f;
+	-webkit-transition: background-color 0.5s ease;
+}
+
+.btn-atp-primary:hover,
+.btn-atp-primary:focus,
+.btn-atp-primary:active,
+.btn-atp-primary.focus,
+.btn-atp-primary.active{
+	color: #fff;
+	background-color: #292e40;
+	border-color: #292e40;
+}
+
+
+@media (min-width: 340px){
+
+}
+
+@media (min-width:550px){
+
+}
+
+@media (min-width:768px){
+
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
 }

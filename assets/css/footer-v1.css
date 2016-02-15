@@ -2,7 +2,7 @@
 ------------------------------------*/
 .footer-v1 .footer {
 	padding: 40px 0;	
-	background: #272727;
+	background: #3b435e;
 }
 
 .footer-v1 .footer p {
@@ -17,13 +17,17 @@
 
 /*Link List*/
 .footer-v1 .link-list li {
-	border-top: solid 1px #353535;
+	border-top: solid 1px #5868a0;
 }
 
 .footer-v1 address,
 .footer-v1 .link-list a,
 .footer-v1 .link-list i {
 	color: #eee;
+}
+
+.link-list li:first-child {
+    border-top: none !important;
 }
 
 .footer-v1 address {
@@ -37,14 +41,15 @@
 
 /*Copyright*/
 .footer-v1 .copyright {
-	background: #222;
+	background: #292e40;
 	border-top: none;
 	padding: 10px 0 5px;
 }
 
 .footer-v1 .copyright p {
-	color: #eee;
-	margin-top: 14px;
+	color: #fff;
+	margin-top: 11px;
+	font-size: 14px;
 }
 
 .footer-v1 .copyright a {
@@ -59,6 +64,20 @@
 .footer-v1 .footer-socials li a {
 	color: #777;
 	font-size: 16px;
+}
+
+.link-list a {
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-transition: color 0.5s ease;
+}
+
+.link-list a:hover,
+.link-list a:hover {
+    color: #de767d;
 }
 
 @media (max-width: 991px) {
