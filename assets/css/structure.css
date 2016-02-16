@@ -47,6 +47,9 @@
 }
 
 /* Declaracion de row fluid*/
+.padding-bottom-30{
+  padding-bottom: 30px;
+}
 .row {width: 100%}
 
 .clear,
